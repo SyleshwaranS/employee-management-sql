@@ -191,10 +191,10 @@ select FIRST_NAME,(select MAX(Incentive_Amount) from Incentives where Employee_R
 select SALARY TOP_2_SALARY from employee order by SALARY desc limit 2;
 
 -- 47 SELECT TOP N SALARY FROM THE TABLE
-select SALARY TOP_10_SALARY from employee order by SALARY desc limit N ;
+select SALARY TOP_10_SALARY from employee order by SALARY desc limit N ; -- REPLACE 'N' BY NEEDED VALUE
 
 -- 48 SELECT 2ND HIGHEST SALARY FROM THE TABLE
 select SALARY 2ND_HIGHEST_SALARY from employee limit 1 offset 1 ;
 
 -- 49 SELECT Nth HIGHEST SALARY FROM THE TABLE
-select SALARY Nth_HIGHEST_VALUE from employee limit 1 offset N-1 ;
+select SALARY Nth_HIGHEST_VALUE from employee limit 1 offset N-1 ; -- REPLACE 'N' BY NEEDED VALUE
